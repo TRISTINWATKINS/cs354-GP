@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rust Example Programs - Team Perch</title>
+</head>
+<body>
+    <h1>Rust Example Programs</h1>
+
+    <h2>Simple & Medium Examples</h2>
+    <p>Each team member contributed one simple program and one medium program. Tristin's contributions are listed below.</p>
+
+    <hr>
+
+    <h2>Tristin Watkins — Simple Program</h2>
+    <pre>
+// Simple Rust Program: Celsius to Fahrenheit Converter
+fn main() {
+    let celsius = 25.0;
+    let fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+
+    println!("{}°C = {}°F", celsius, fahrenheit);
+}
+    </pre>
+
+    <hr>
+
+    <h2>Tristin Watkins — Medium Program</h2>
+    <pre>
+// Medium Rust Program: Basic Todo List (CLI)
+
+use std::io;
+
+fn main() {
+    let mut todos: Vec<String> = Vec::new();
+
+    loop {
+        println!("\n--- Simple Todo List ---");
+        println!("1. Add task");
+        println!("2. View tasks");
+        println!("3. Quit");
+
+        let mut choice = String::new();
+        io::stdin().read_line(&mut choice).expect("Failed to read input");
+
+        match choice.trim() {
+            "1" => {
+                let mut task = String::new();
+                println!("Enter task:");
+                io::stdin().read_line(&mut task).expect("Failed to read");
+                todos.push(task.trim().to_string());
+            }
+            "2" => {
+                println!("\nYour Tasks:");
+                for (i, task) in todos.iter().enumerate() {
+                    println!("{}. {}", i + 1, task);
+                }
+            }
+            "3" => break,
+            _ => println!("Invalid option, try again."),
+        }
+    }
+}
+    </pre>
+
+</body>
+</html>

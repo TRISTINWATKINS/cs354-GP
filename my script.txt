@@ -1,0 +1,25 @@
+Hi everyone, my name is Tristin, and my part of the project was covering the
+documentation side of the Rust language—specifically how to install Rust,
+where to find official references, and how to compile and run programs.
+
+Rust’s documentation ecosystem is one of the strongest parts of the language.
+The Rust Book, Rust by Example, and the official Reference together serve as
+the primary specification for the language. Rust doesn’t have a single formal
+specification—its behavior is defined through these documents and through the
+compiler itself.
+
+I also documented how to install Rust using rustup, which is the official tool
+that manages toolchains, updates, and the compiler. It works the same on Linux,
+Mac, and Windows, and once it’s installed you automatically get access to rustc,
+Cargo, Clippy, and rustfmt.
+
+I also demonstrated how compiling works using both rustc directly and Cargo.
+Cargo is the tool most Rust programmers use because it handles packages,
+dependencies, and builds automatically.
+
+For my example programs, I wrote a simple Celsius-to-Fahrenheit converter to
+show basic syntax, variables, and printing. My medium program was a basic
+command-line todo list, which demonstrates user input, vectors, loops, and
+match expressions—some of Rust’s most common features.
+
+That's a summary of my portion, and I'll pass it on to the next team member.

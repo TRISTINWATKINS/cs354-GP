@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rust Documentation & Installation - Team Perch</title>
+</head>
+<body>
+    <h1>Rust Documentation, Installation, and Development Tools</h1>
+    <p><strong>Author:</strong> Tristin Watkins</p>
+
+    <h2>1. Official Rust Documentation</h2>
+    <ul>
+        <li><a href="https://www.rust-lang.org/learn">Official Rust Learning Page</a></li>
+        <li><a href="https://doc.rust-lang.org/book/">The Rust Programming Language (The Rust Book)</a></li>
+        <li><a href="https://doc.rust-lang.org/reference/">Rust Language Reference</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/">Rust By Example</a></li>
+        <li><a href="https://doc.rust-lang.org/cargo/">Cargo Book (Package Manager)</a></li>
+        <li><a href="https://crates.io/">crates.io (Rust package repository)</a></li>
+    </ul>
+
+    <h2>2. Language Specification</h2>
+    <p>Rust does not have a single formal language specification like C or Java. Instead, the <em>Rust Reference</em> and compiler behavior define the language. Important sections include memory model, ownership rules, pattern matching syntax, and type system behaviors.</p>
+
+    <h2>3. Installing Rust</h2>
+    <p>The easiest way to install Rust is using <strong>rustup</strong>, Rust’s official toolchain installer.</p>
+
+    <h3>Linux & macOS Installation</h3>
+    <pre>
+curl https://sh.rustup.rs -sSf | sh
+    </pre>
+
+    <h3>Windows Installation</h3>
+    <p>Download and run the installer from:</p>
+    <p><a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
+
+    <h3>Verify Installation</h3>
+    <pre>
+rustc --version
+cargo --version
+    </pre>
+
+    <h2>4. Compiling and Running Rust Programs</h2>
+    <h3>Without Cargo (single-file):</h3>
+    <pre>
+rustc program.rs
+./program
+    </pre>
+
+    <h3>With Cargo (recommended):</h3>
+    <pre>
+cargo new myproject
+cd myproject
+cargo run
+    </pre>
+
+    <h2>5. Rust Development Tools</h2>
+    <ul>
+        <li><strong>rustc</strong>: The Rust compiler</li>
+        <li><strong>Cargo</strong>: Build system and package manager</li>
+        <li><strong>rustfmt</strong>: Auto-formatter</li>
+        <li><strong>clippy</strong>: Linter / static analysis</li>
+        <li><strong>crates.io</strong>: Library/package repository</li>
+        <li><strong>docs.rs</strong>: Documentation for all published crates</li>
+    </ul>
+
+    <p>This page provides all required documentation, installation steps, and reference materials for Rust as required by the assignment rubric.</p>
+
+</body>
+</html>
