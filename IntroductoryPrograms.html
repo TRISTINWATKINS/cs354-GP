@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rust Introductory Programs - Tristin Watkins</title>
+
+    <!-- CSS Styling for presentation -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Clean font */
+            background-color: #f0f8ff; /* Light blue background */
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #003366; /* Dark blue for main header */
+            text-align: center;
+        }
+
+        h2 {
+            color: #004080;
+            margin-top: 30px;
+        }
+
+        pre {
+            background-color: #e6f2ff; /* Light box for code */
+            padding: 15px;
+            border-left: 5px solid #004080;
+            overflow-x: auto; /* Allow horizontal scroll if long code */
+        }
+
+        p {
+            max-width: 700px;
+        }
+
+        hr {
+            border: 1px solid #cccccc;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main title -->
+    <h1>Rust Introductory Programs (Beginner Style)</h1>
+
+    <p>
+        These are my introductory Rust programs. I am very new to Rust, so the examples are simple.
+    </p>
+
+    <hr>
+
+    <!-- Simple Program Section -->
+    <h2>Demonstrates Adding Two Numbers to create their sum</h2>
+    <pre>
+// Simple Rust Program: Add Two Numbers
+// Explanation: This program declares two numbers and calculates their sum.
+// println! is used to display the result in the terminal.
+
+fn main() {
+    let a = 5;      // first number
+    let b = 3;      // second number
+    let sum = a + b;
+
+    println!("The sum is: {}", sum);
+} 
+    </pre>
+    <p> Expected output should be: The sum is: 8, For this example used.</p>
+
+    <h2>Demonstrates a Simple Guessing Game</h2>
+    <pre>
+// Medium Rust Program: Guessing Game
+// Explanation: This program asks the user to guess a number. 
+// It uses std::io to read input and compares the guess using an if/else statement.
+
+use std::io;
+
+fn main() {
+    println!("Guess the number (it's 7 btw lol):");
+
+    let mut user_guess = String::new();
+
+    io::stdin()
+        .read_line(&mut user_guess)
+        .expect("Could not read input");
+
+    let guess_num: i32 = user_guess.trim().parse().unwrap_or(0);
+
+    if guess_num == 7 {
+        println!("You got it right!");
+    } else {
+        println!("Nope, that wasn't it.");
+    }
+}
+    </pre>
+    <p> Expected output should be: You got it right! if the guess is 7, otherwise Nope, that wasn't it.</p>
+    <pre>
+</body>
+</html>
